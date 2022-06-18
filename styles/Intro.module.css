@@ -1,0 +1,75 @@
+.container{
+    background-image:url("../public/img/bg.png");
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+  .card{
+     flex: 1;
+     padding: 100px;
+     padding-right: 0;
+     
+     }
+  .title{
+    color: rgb(243, 19, 19);
+    padding: 50px;
+    font-size: 50px;
+    padding-bottom: 10px;
+  }
+  .button{
+    color: rgb(234, 234, 241);
+    background-color: rgba(6, 83, 19, 0.712);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px;
+    cursor:pointer;
+    border-radius: 10px;
+    border: none;
+    margin: 45px;
+    margin-top: 20px;
+    
+  
+  }
+  .desc{
+    font-size: 30px;
+    padding: 50px;
+    
+    color: rgb(2, 2, 15);
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  @keyframes button {
+    to{
+      background-color: rgb(2, 63, 2);
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .circle1 {
+      right: -50vh;
+      bottom: -50vh;
+    }
+  
+    .card {
+      padding: 50px;
+      align-items: center;
+      text-align: center;
+      justify-content: space-between;
+    }
+  
+    .title {
+      font-size: 30px;
+    }
+  
+    .desc {
+      display: none;
+    }
+  }
+  
